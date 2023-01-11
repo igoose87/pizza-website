@@ -179,6 +179,7 @@ button {
     display: none;
 }
 
+/* styles for hamburger menu */
 .hamburger {
     display: none;
     font-size: 24px;
