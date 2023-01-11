@@ -1,0 +1,68 @@
+@media (max-width: 980px) {
+
+    .headerRightHalf {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        background-color: #008C45;
+        text-align: center;
+        margin-top: 280px;
+        right: 0;
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 10px 0;
+        margin-right: 20px;
+    }
+
+    #checkbox_toggle:checked ~ .headerRightHalf {
+        display: block;
+        max-height: 100%;
+        transition: all .5s;
+    }
+
+    #checkbox_toggle:checked ~ .hamburger .hamburgerLine {
+        background-color: transparent;
+    }
+
+    #checkbox_toggle:checked  ~ .hamburger .hamburgerLine::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    #checkbox_toggle:checked  ~ .hamburger .hamburgerLine::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .footerWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer {
+        background: #CE2B37;
+    }
+
+    .footer__section {
+        display: flex;
+        padding: 7px 7px;
+    }
+
+    .footer__item {
+        color: #F1F2F1;
+        font-size: 16px;
+    }
+
+    .githubLogo {
+        margin-left: 0;
+        max-width: 20px;
+    }
+}

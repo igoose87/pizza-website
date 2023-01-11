@@ -149,6 +149,7 @@ button {
 /* footer styles */
 .footerWrapper {
     display: flex;
+    flex-direction: row;
     max-width: 1200px;
     justify-content: space-between;
     align-items: center;
@@ -172,4 +173,41 @@ button {
 .githubLogo {
     margin-left: -125px;
     max-width: 25px;
+}
+
+#checkbox_toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hamburgerLine {
+    display: block;
+    background-color: #F1F2F1;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+
+.hamburgerLine::before,
+.hamburgerLine::after {
+    background-color: #F1F2F1;
+    content: "";
+    display: block;
+    position: absolute;
+    transition: all .3s;
+    width: 100%;
+    height: 100%;
+}
+
+.hamburgerLine::before {
+    top: 7px;
+}
+
+.hamburgerLine::after {
+    top: -7px;
 }
