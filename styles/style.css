@@ -1,0 +1,175 @@
+/* general styles */
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #D9D9D9;
+    font-family: Comfortaa, Calibri, serif;
+    color: #F1F2F1;
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    color: #F1F2F1;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(231, 231, 231);
+}
+
+.bodyWrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header styles */
+.headerWrapper {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background: #CE2B37;
+    box-shadow: 0 3px 5px rgba(91,91,91,0.53);
+    white-space: nowrap;
+}
+
+
+.header__section {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.headerLeftHalf {
+    justify-content: flex-start;
+}
+
+.header__item {
+    padding: 10px 15px;
+    margin-left: 5px;
+}
+
+.headerLogo {
+    font-weight: bolder;
+    font-size: 40px;
+    text-transform: lowercase;
+}
+
+.headerRightHalf {
+    justify-content: flex-end;
+}
+
+.headerButton {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* main styles */
+.main {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 295px;
+    height: 350px;
+    border: 1px solid #ffffff;
+    border-radius: 40px;
+    margin: 0 50px 50px;
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+.pizzaImage {
+    width: 295px;
+    height: 250px;
+}
+
+.image {
+    width: 295px;
+    height: 290px;
+    border-radius: 40px 40px;
+}
+
+.productDescription {
+    display: flex;
+    flex-direction: column;
+    width: 295px;
+    height: 100px;
+    border-top: 2px solid rgba(91,91,91,0.53);
+    border-radius: 0 0 39px 39px;
+    background-color: #F1F2F1;
+    text-align: center;
+}
+
+.productText {
+    color: #008C45;
+    font-size: 20px;
+}
+
+.pizzaName {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+button {
+    color: #F1F2F1;
+    background: #008C45;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+/* footer styles */
+.footerWrapper {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer {
+    background: #CE2B37;
+}
+
+.footer__section {
+    display: flex;
+    padding: 20px 20px;
+}
+
+.footer__item {
+    color: #F1F2F1;
+    font-size: 16px;
+}
+
+.githubLogo {
+    margin-left: -125px;
+    max-width: 25px;
+}
