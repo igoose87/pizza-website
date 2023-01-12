@@ -103,7 +103,11 @@ a:hover {
     margin: 0 50px 50px;
     background-color: rgba(255, 255, 255, 0.22);
 }
-
+.product:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
 .pizzaImage {
     width: 295px;
     height: 250px;
@@ -171,7 +175,6 @@ button {
 }
 
 .githubLogo {
-    margin-left: -125px;
     max-width: 25px;
 }
 
@@ -230,4 +233,16 @@ button {
     color: rgba(0, 0, 0, 0.83);
     text-align: center;
     font-size: 24px;
+}
+
+/* styles for cart.html */
+/* main */
+.cartMain {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px 0;
 }

@@ -8,6 +8,8 @@
     <link href="../styles/adaptive.css" rel="stylesheet">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <script src="../scripts/loadTimer.js" type="text/javascript"></script>
+    <script src="../scripts/headetFontSizeIncreaser.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -22,13 +24,13 @@
                 <input type="checkbox" id="checkbox_toggle">
                 <label for="checkbox_toggle" class="hamburger"><span class="hamburgerLine"></span></label>
                 <div class="header__section headerRightHalf">
-                    <div class="header__item headerButton">
+                    <div class="header__item headerButton" onmouseover="resize(this, '200%')" onmouseout="resize(this, '150%')">
                         <a href="index.html">Menu</a>
                     </div>
-                    <div class="header__item headerButton">
+                    <div class="header__item headerButton"  onmouseover="resize(this, '200%')" onmouseout="resize(this, '150%')">
                         <a href="about.html">About us</a>
                     </div>
-                    <div class="header__item headerButton">
+                    <div class="header__item headerButton"  onmouseover="resize(this, '200%')" onmouseout="resize(this, '150%')">
                         <a href="cart.html">Cart</a>
                     </div>
                 </div>
@@ -158,6 +160,11 @@
                     <a href="https://github.com/igoose87">
                         <img class="githubLogo" alt="" src="../images/githublogo.png">
                     </a>
+                </div>
+                <div class="footer__section loadTimer">
+                    <div>
+                        <span id="loadtime"></span>
+                    </div>
                 </div>
                 <div class="footer__section footerRightHalf">
                     <div class="footer__item footerText">
