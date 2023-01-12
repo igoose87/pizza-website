@@ -84,6 +84,10 @@
         font-size: 20px;
     }
 
+    .headerRightHalf {
+        margin-top: 250px;
+    }
+
     .product {
         display: flex;
         flex-direction: column;
