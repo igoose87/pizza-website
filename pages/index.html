@@ -9,6 +9,7 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Comfortaa">
     <script src="../scripts/simpleScripts.js" type="text/javascript"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -83,6 +84,7 @@
         hour = data.getHours()
         if ((hour >= 0) && (hour <= 5)) {
             document.getElementById("timesOfDay").innerHTML = "Good night!";
+            document.getElementById("tagline").innerHTML = "Unfortunately, we are temporarily closed. Place your order after 8am";
         } else if ((hour >= 6) && (hour <= 11)) {
             document.getElementById("timesOfDay").innerHTML = "Good morning!";
         } else if ((hour >= 12) && (hour <= 17)) {

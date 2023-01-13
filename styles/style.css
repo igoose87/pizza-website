@@ -126,7 +126,7 @@ a:hover {
     flex-direction: column;
     justify-content: end;
     width: 295px;
-    height: 350px;
+    height: 420px;
     border: 1px solid #ffffff;
     border-radius: 40px;
     margin: 0 50px 50px;
@@ -144,19 +144,20 @@ a:hover {
 
 .image {
     width: 295px;
-    height: 290px;
-    border-radius: 40px 40px;
+    height: 320px;
+    border-radius: 40px 40px 0 0;
 }
 
 .productDescription {
     display: flex;
     flex-direction: column;
     width: 295px;
-    height: 100px;
+    height: 200px;
     border-top: 2px solid rgba(91,91,91,0.53);
     border-radius: 0 0 39px 39px;
     background-color: #ffffff;
     text-align: center;
+    color: black;
 }
 
 .productText {
@@ -169,15 +170,45 @@ a:hover {
     margin-bottom: 10px;
 }
 
-button {
-    color: #F1F2F1;
-    background: #008C45;
-    font-size: 24px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
+.itemCounterWrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    color: black;
+    font-size: 20px;
 }
 
+.itemCounterLeftHalf {
+    display: flex;
+    padding: 0 5px;
+    background-color: #F1F2F1;
+    box-shadow: 0 2px 2px rgba(91,91,91,0.53);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.itemCurrent {
+    padding: 0 15px;
+    background-color: #F1F2F1;
+    user-select: none;
+}
+
+.itemCount {
+    cursor: pointer;
+    user-select: none;
+}
+
+.addToCart {
+    cursor: pointer;
+    margin: 25px;
+    border: 1px solid #008C45;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.addToCart:active {
+    background-color: #008C45;
+}
 
 /* footer styles */
 .footerWrapper {
