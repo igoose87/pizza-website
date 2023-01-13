@@ -73,7 +73,7 @@
 }
 
 @media (max-width: 780px){
-    .indexMain {
+    .menuMain {
         display: flex;
         flex-direction: column;
         flex: 1 1 auto;

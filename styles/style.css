@@ -73,8 +73,18 @@ a:hover {
     margin-right: 10px;
 }
 
-/* main styles */
+/* index.html styles */
 .indexMain {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0;
+}
+/* menu.html styles */
+.menuMain {
     display: flex;
     flex-direction: row;
     flex: 1 1 auto;
@@ -175,6 +185,7 @@ button {
 }
 
 .githubLogo {
+    margin-left: -125px;
     max-width: 25px;
 }
 
