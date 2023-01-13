@@ -1,3 +1,5 @@
+// page load timer
+/*
 var before_loadtime = new Date().getTime();
 window.onload = Pageloadtime;
 function Pageloadtime() {
@@ -7,3 +9,11 @@ function Pageloadtime() {
 
     document.getElementById("loadtime").innerHTML = "<font color='#F1F2F1'><b>" + pgloadtime + "</b></font>";
 }
+*/
+
+// increase font function
+function resize(elem, percent) {
+    if (screen.width > 980)
+        elem.style.fontSize = percent;
+}
+
