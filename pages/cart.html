@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About our burp: </title>
+  <title>Your cart!</title>
   <link rel="shortcut icon" href="/images/icon.ico" type="image/x-icon">
   <link href="../styles/style.css" rel="stylesheet">
   <link href="../styles/adaptive.css" rel="stylesheet">
@@ -39,6 +39,37 @@
     </header>
 
     <main class="cartMain">
+      <div class="cart">
+        <div class="card-body">
+          <p class="cart-title">Your order:</p>
+          <div data-cart-empty class="alert alert-secondary" role="alert">
+            Cart is empty!
+          </div>
+          <div class="cart-wrapper">
+
+            <!--cart item-->
+            <div class="cart-item" data-id="01">
+              <div class="cart-item_img">
+                <img src="../images/Margherita-traditional.webp" alt="" class="img">
+              </div>
+              <div class="cart-item_description">
+                <div class="cart-item_title">Margarita</div>
+                <div class="cart-item_price">10$</div>
+                <div class="cart-item_details">
+                  <div class="wrapper cart-counter-wrapper">
+                    <div class="itemCount" data-action="minus">-</div>
+                    <div class="itemCurrent" data-counter>1</div>
+                    <div class="itemCount" data-action="plus">+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-total">
+              <p><span class="h5">Total:</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
@@ -66,5 +97,9 @@
       </div>
     </footer>
   </div>
+
+  <script src="../scripts/cart.js"></script>
+  <script src="../scripts/counter.js"></script>
+
 </body>
 </html>
