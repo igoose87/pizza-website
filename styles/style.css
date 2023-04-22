@@ -278,9 +278,9 @@ a:hover {
     top: -7px;
 }
 
-/* styles for about.html */
+/* styles for account.html */
 /* main */
-.aboutMain {
+.accountMain {
     display: flex;
     flex-direction: row;
     flex: 1 1 auto;
@@ -290,7 +290,7 @@ a:hover {
     padding: 2px 0;
 }
 
-.about {
+.account {
     margin-top: 10px;
     color: rgba(0, 0, 0, 0.83);
     text-align: center;

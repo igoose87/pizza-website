@@ -1,4 +1,4 @@
-const cartWrapper = document.querySelector('.cart-wrapper');
+let cartWrapper = document.querySelector('.cart-wrapper');
 
 window.addEventListener('click', function (event) {
     if (event.target.hasAttribute('data-cart')) {
